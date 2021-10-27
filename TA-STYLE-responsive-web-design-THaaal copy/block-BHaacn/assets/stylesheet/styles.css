@@ -1,0 +1,391 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Open Sans", sans-serif;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Variable */
+:root {
+  --primary: #ee5639;
+  --secondary: #ffffff;
+  --bg: #ffffff;
+  --text: #222d38;
+}
+
+/* My Resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 72px;
+  width: 100%;
+}
+
+/* Flex */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Columns */
+.flex-48 {
+  flex: 0 1 40%;
+}
+.flex-30 {
+  flex: 0 1 30%;
+}
+.width-full {
+  width: 100%;
+}
+
+/* Header */
+.header {
+  padding: 16px 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.header a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.nav a {
+  margin-left: 10px;
+}
+
+/* Hero Header */
+.col-2-1 {
+  color: #ffffff;
+}
+.col-2-1 h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.col-2-1 p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+.col-2-1 a {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #f9234c;
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+/* TODO - Can't mvoe the image to the right */
+.section-2-1 {
+  background: linear-gradient(to right, rgba(47, 19, 228, 0.6), rgba(47, 19, 228, 0.6)),
+    url(../media/banner.png) center center no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+}
+
+/* Section 3 */
+.col-3-1 h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.col-3-1 p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+.col-3-1 a {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #f9234c;
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.col-3-1 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+/* Section 4 */
+.section-4-1 {
+  background-color: #dfecff;
+}
+.heading-4 h3 {
+  font-size: 40px;
+  padding: 10px 0;
+  text-align: center;
+}
+.join-1 {
+  border: 1px dashed #f9234c;
+  padding: 10px;
+}
+.join-1 h5 {
+  font-size: 24px;
+  padding-top: 20px;
+}
+.join-1 p {
+  padding: 10px 0;
+  color: gray;
+}
+/* Section 5 */
+.col-5-1 {
+  margin-bottom: 40px;
+}
+
+.col-5-1 a {
+  width: 20%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #f9234c;
+  color: white;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 20px solid #f9234c;
+}
+.col-5-1 img {
+  width: 15%;
+  border-radius: 5px;
+}
+.col-5-1 .col-5-text {
+  width: 50%;
+  margin-left: 30px;
+}
+.col-5-text h6 {
+  font-size: 25px;
+}
+.col-5-text p {
+  color: gray;
+}
+.schedule-btn {
+  font-size: 20px;
+  background-color: #f9234c;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 15px 25px;
+  color: #ffffff;
+}
+.btn-s {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.section-6-1 {
+  background-color: #dfecff;
+  padding: 30px 0;
+}
+.col-6-1 {
+  text-align: center;
+  padding: 20px 80px;
+}
+.col-6-1 h6 {
+  font-size: 24px;
+  padding: 5px 0;
+}
+.col-6-1 p {
+  font-size: 18px;
+}
+.red-outline {
+  background-color: #f9234c;
+  color: #ffffff;
+  border-radius: 5px;
+}
+/* Section 7 */
+.video {
+  text-align: center;
+  margin: 40px 0;
+}
+.video iframe {
+  border-radius: 10px;
+}
+/* Section 8 */
+.section-8-1 {
+  background-color: #dfecff;
+}
+.section-8-1 h5 {
+  font-size: 40px;
+
+  text-align: center;
+  padding: 30px 0;
+}
+.col-8-1 {
+  width: 30%;
+  margin-bottom: 80px;
+}
+.col-8-1 h6 {
+  font-size: 20px;
+  padding: 10px 0;
+}
+.col-8-1 p {
+  color: gray;
+  padding-bottom: 10px;
+}
+.col-8-1 a {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.col-8-1 a:hover {
+  color: #f9234c;
+  font-weight: 500;
+}
+.footer {
+  background-color: #24347b;
+  padding: 20px 0;
+  color: #ffffff;
+  font-size: 20px;
+}
+.footer a {
+  color: #c2c2c2;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 18px;
+}
+.sm-icons a {
+  font-size: 34px;
+}
+.footer h6 {
+  padding-bottom: 10px;
+}
+footer {
+  background-color: #102269;
+  color: gray;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 18px;
+}
